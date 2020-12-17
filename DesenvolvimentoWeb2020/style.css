@@ -1,0 +1,51 @@
+/*.principal {
+	background:blue;
+}
+
+.conteudo {
+	background: #f0f0f0;
+	border: 1px solid gray;
+	width: 200px;
+	height: 200px;
+	float: right;
+}
+
+.conteudo1 {
+	background: #f0c3c9;
+	border: 1px solid gray;
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.texto {
+	clear: both;
+}*/
+
+body {
+	background: #f4f4f4;
+}
+
+#principal {
+	width: 920px;
+}
+
+.noticia {
+	background: #e5e5e5;
+	padding: 5px;
+	width: 280px;
+	margin: 7px;
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.imagem-galeria {
+	background: white; 
+	width:265px;
+	padding: 5px;
+	margin: 15px; 
+	float: left;
+}
