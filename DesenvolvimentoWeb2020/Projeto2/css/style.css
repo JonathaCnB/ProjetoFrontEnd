@@ -30,10 +30,15 @@ a {
 #conteudo h1 {
 	color:#828271;
 	font-size:1.2em;
-	
+
 }
 
 .centralizar {
 	text-align:center;
+}
+
+.img-campanhas {
+	border: 10px solid #c3c3ae;
+
 }
 
