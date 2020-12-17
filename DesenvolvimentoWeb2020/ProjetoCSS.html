@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Inline Style</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style type="text/css">
+  	
+  	p {
+  		color: red;
+  	}
+
+  	h1 {
+  		color: blue;
+  	}
+
+  	#bordas {
+  		/*border: 15px outset red; --> Para acessar todas as propiedades os elementos precisam ser inseridos separados*/
+  		border-color:red green;
+  		border-width: 5px 10px 15px 20px;
+  		border-style: outset; 
+  		/*as definições rodam sempre no sentido horario*/
+  	}
+
+  	#fontes {
+  		/*
+  		  px --> tamanho fixo
+  		  % --> tamanho relativo
+  		  em --> tamanho relativo ao tamanho pai
+  		*/
+  		font-size: 16px;
+  	}
+
+  	.texto {
+  		font-size:1em;
+  	}
+
+  	#estilos {
+  		/* normal, bold, 100 até 900 */
+  		font-weight: bold;
+  		font-size:30px;
+  		
+  	}
+
+  	.formatacao {
+  		font-style: italic;
+  		/*underline, overline, line-through*/
+  		text-decoration:underline overline ;
+  	}
+
+  	.fundo {
+  		background-image: url(img/img1.png);
+  		/*repeat, repeat-x, repeat-y, no-repeat*/
+  		background-repeat: no-repeat;
+  		background-attachment: fixed; /*Fixa a imagem na pagina*/
+  		background-position:right center; /*pode difinir dois valores, o 1º left, center, rught e 2º top, center, bottom*/
+  		background:gray url(img/img1.png) fixed no-repeat; /*Essa definição de parametro se sobreponhe as demais*/
+  	}
+
+  </style>
+</head>
+	<body>
+		<h1>Estilo CSS (cascading style sheets)</h1>
+		<div id="bordas">
+			<span><h2>Bordas</h2></span>			
+			<p>
+				e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+			</p>
+		</div>
+		<hr>
+		<did id="fontes">
+			<h2>Fontes e Cores</h2>
+
+			<p class="texto">
+				Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos.			
+			</p>
+		</div>
+		<hr>
+		<div id="estilos">
+			<h2> Estilos de Texto</h2>
+			<p class="formatacao">Texto Negrito</p>
+			<p>Texto Negrito</p>
+		</div>
+
+		<hr>
+
+		<div class="fundo">
+			<h2>Cor e imagem de fundo</h2>
+			<br><br><br><br><br><br>
+			<br><br><br><br><br><br>
+		</div>
+		<hr>
+		<div class="externo">
+			<h2>Folha de Stylo externa</h2>
+		</div>
+	</body>
+</html>
