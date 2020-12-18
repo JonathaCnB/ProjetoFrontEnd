@@ -31,7 +31,7 @@ body {
 	margin: 0 auto;
 }
 
-#area-postagens, #area-lateral {	
+#area-lateral {	
 	background: orange;
 
 }#area-postagens {
@@ -67,14 +67,21 @@ a {
 }
 
 a:link, a:visited {
+	color:#f7b600;
+}
+
+a:hover {
+	text-shadow: 2px 2px 2px;
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
 	color:#fff;
 	padding: 8px 12px;
 }
 
-a:hover {
+#area-cabecalho a:hover {
 	color:#f7b600;
 	background:#fff;
-
 }
 
 /*
