@@ -28,6 +28,7 @@ body {
 
 #principal {
 	width: 920px;
+
 }
 
 .noticia {
@@ -48,4 +49,94 @@ body {
 	padding: 5px;
 	margin: 15px; 
 	float: left;
+}
+
+.borda {
+	border: 1px solid red;
+	/*Elementos do tipo bloco 
+	com essa propriedade ficam lado a lado*/
+	display: inline;
+}
+
+
+.posicionamento {
+	background: #007fc7;
+}
+
+.container {
+	background: #fff;
+	width: 920px;
+	margin: 10px auto;
+	padding: 10px;
+	position: relative;
+
+}
+
+.relative {
+	border: 1px solid red;
+	position:relative;
+	/*top, right, bottom e left*/
+	top: 60px;
+	left: 620px;
+
+}
+
+.fixed {
+	position: fixed;
+}
+
+.absolute {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.container p {
+	width: 300px;
+}
+
+/*SOBRE POSIÇÃO DE CONTEUDO*/
+
+.sobrepor {
+	position:relative;
+}
+
+.cont1 {
+	border: 1px solid red;
+	background: orange;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	z-index: 1;
+}
+
+.cont2 {
+	border: 3px solid red;
+	background: red;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 80px;
+	left: 80px;
+	z-index: 2;
+}
+
+.formtlink {
+	position: relative;
+	top: 260px;
+}
+
+a{
+	padding: 5px 10px;
+	text-decoration:none;
+	border-radius: 5px;
+}
+
+a:visited, a:link {
+	color: black;
+}
+
+a:hover {
+	color: white;
+	background:black;
 }
