@@ -1,0 +1,162 @@
+* {
+	margin-left: 25px;
+}
+
+#caixa {
+	width: 300px;
+	height:300px;
+	background: #b9c941;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 150px;
+}
+
+#box1 {
+	
+	border: 1px solid red;
+	float: left;
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	
+	box-sizing: border-box;
+}
+
+#box2 {
+	float: left;
+	padding: 50px;
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+}
+
+#boxtransparencia {
+	float: left;
+	width: 300px;
+	height: 300px;
+	background: #b9c941 url(../img/camera.png);
+}
+
+#boxtransparencia h1 {
+	background: rgba(255,255,255, 0.5);
+	display:block;
+	text-align:center;
+}
+
+#boxlinear {
+	float: left;
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+#boxradios {
+	float: left;
+	width: 300px;
+	height: 300px;
+	background: radial-gradient( circle farthest-corner at 5.6% 54.5%,  rgba(47,71,79,1) 0%, rgba(159,188,198,1) 83.6% );
+}
+
+
+#boxsombra {
+	float: left;
+	width: 300px;
+	height: 300px;
+	background: #009670;
+	box-shadow: 3px 5px 3px rgba(0,0,0,0.6);
+}
+
+#boxsombra h1 {
+	color: white;
+	text-shadow: 3px 5px 3px rgba(0,0,0,0.6);
+
+} 
+
+#boxanimacao {
+	float: left;
+	width: 300px;
+	height: 300px;
+	background: red;
+	animation-name: animacao-caixa;
+	animation-delay: 2s;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes animacao-caixa {
+	from {
+		background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+		border-radius: 0;
+	}
+	to {
+		background: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
+		border-radius: 300px;
+
+	}
+}
+
+#boxtransicao {
+	float: left;
+	width: 300px;
+	height: 300px;
+	background: red;
+	display: block;
+}
+
+#boxtransicao h1:hover {
+	border-bottom: 2px solid white;
+	transition: border 3s;
+}
+
+#flexbox {
+	background: #dcdcdc;
+	height: 400px;
+	display: flex;
+	/*row | row-reverse | colum | column-reverse*/
+	flex-direction: row;
+
+	/* define o espaçamento no container e se eles ficaram justificados
+	nowrap | wrap | wrap-reverse | quebra do conteudo dentro do conteiner
+	*/
+	flex-wrap: nowrap;
+
+	/*
+	flex-start | flex-end | center | space-between | space-around
+	*/
+
+	justify-content: space-around;
+
+	/* Define a possibilidade de centralizacao dos items
+	stretch | center | flex-start | flex-end | baseline
+	*/
+
+	align-items: center;
+	/*
+	Define a proporcao de espaço ocupado por um item
+	*/
+	flex-grow: 1;
+
+}
+
+.ordem1 {
+	order: -1;
+}
+
+.ordem2 {
+	order: -2;
+}
+
+.flexitem {
+	flex-grow: 1;
+}
+
+
+.item {
+	background: white;
+	border: 1px solid gray;
+	width: 100px;
+	height: 100px;
+
+}
+
